@@ -1,0 +1,36 @@
+<link href="/static/style.css" rel="stylesheet" />
+
+<table class="board">
+    <tr>
+      <td><placeholder>1</placeholder></td>
+      <td><placeholder>2</placeholder></td>
+      <td><placeholder>3</placeholder></td>
+    </tr>
+    <tr>
+      <td><placeholder>4</placeholder></td>
+      <td><placeholder>5</placeholder></td>
+      <td><placeholder>6</placeholder></td>
+    </tr>
+    <tr>
+      <td><placeholder>7</placeholder></td>
+      <td><placeholder>8</placeholder></td>
+      <td><placeholder>9</placeholder></td>
+    </tr>    
+</table>
+
+<br>
+
+<div>
+    <label class="text" for="number">It's you turn, Zhengyang. Move to which place?</label>
+</div>
+
+<form method="POST">
+  <div>
+      <input class="input" type="text" id="number" name="number" placeholder="Enter a number" />
+      <button class="secondary_button">Confirm</button>
+  </div>
+</form>
+
+<div>
+  {{ request.form }}
+</div>

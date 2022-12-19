@@ -1,0 +1,29 @@
+<link href="/static/style.css" rel="stylesheet" />
+
+<div>
+    <h1 class="h1">Welcome to Tic-Tac-Toe!</h1>
+</div>
+
+<div>
+    <p class="text">Enter player names and start:</p>
+</div>
+
+<form method="POST">
+
+    <label class="text" for="player_name">Player X:</label>
+    <input class="input" type="text" id="player_name" name="player_X_name" placeholder="Enter your name" />
+    
+    <br>
+    
+    <label class="text" for="player_name">Player O:</label>
+    <input class="input" type="text" id="player_name" name="player_O_name" placeholder="Enter your name" />
+    
+    <br>
+    
+    <button class="primary_button" type="submit">Start</button>
+
+</form>
+
+<div>
+    {{ request.form }}
+</div>
